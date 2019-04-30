@@ -1,0 +1,15 @@
+
+
+<form class="form-inline">
+  <span>User search by name:</span>&ensp;
+  <input  class="form-control mr-sm-8" type="text" placeholder="Search" #searchBox id="search-box" (keyup)="search(searchBox.value)" />
+</form>
+<ul class="search-result">
+  <li *ngFor="let user of users$ | async">
+    <a routerLink="/detail/{{ user.id }}">
+      {{ user.name }}
+    </a>
+  </li>
+</ul>
+
+

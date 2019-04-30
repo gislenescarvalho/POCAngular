@@ -1,0 +1,40 @@
+.custom-align {
+    padding: 10rem 10rem;
+    text-align: justify;
+}
+
+.btn-custom {
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: #734675;
+    border-color:  #734675;
+    width: 10em;
+    margin-bottom: 0.5em;
+    margin-left: 2.5em;
+}
+
+label {
+  display: inline-block;
+  width: 3em;
+  margin: .5em 0;
+  color: #607D8B;
+  font-weight: bold;
+}
+
+button {
+  margin-top: 20px;
+  font-family: Arial;
+  background-color: #734675;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer; cursor: hand;
+}
+button:hover {
+  background-color: #cfd8dc;
+}
+button:disabled {
+  background-color: #eee;
+  color: #ccc;
+  cursor: auto;
+}

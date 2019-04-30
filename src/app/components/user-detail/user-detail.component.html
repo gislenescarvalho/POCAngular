@@ -1,0 +1,32 @@
+<app-app-navbar></app-app-navbar>
+<div class="container">
+  <div class="custom-align">
+    <br>
+    <br>
+<div class="card" style="width: 50rem;">
+  <div class="card-header">
+    Details
+  </div>
+
+  <div class="card-block">
+    <div *ngIf="user" style='margin: 2.5em'>
+    <h6>{{ user.name | uppercase }} Details</h6>
+    <div>
+      <span>id: </span>{{ user.id }}
+    </div>
+    <div>
+      <span>Name: </span>{{ user.name }}
+    </div>
+    <div>
+      <span>Age: </span>{{ user.age }}
+    </div>
+    <div>
+      <span>Address: </span>{{ user.address }}
+    </div>
+      </div>
+      <hr>
+    <a class="btn btn-custom" (click)="back()">Go Back</a>
+  </div>
+  </div>
+</div>
+  </div>
